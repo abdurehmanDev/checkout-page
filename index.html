@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection UI</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="option-container" id="option1">
+        <div class="option-header">
+            <div class="option-left">
+                <div class="radio-container selected" onclick="selectOption(1)">
+                    <div class="radio-inner"></div>
+                </div>
+                <div>
+                    <span class="unit-text">1 Unit</span>
+                    <span class="discount-badge">10% Off</span>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="current-price">$10.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+            </div>
+        </div>
+        <div class="standard-price">Standard Price</div>
+    </div>
+
+    <div class="option-container selected" id="option2">
+        <div class="popular-badge">MOST POPULAR</div>
+        <div class="option-header">
+            <div class="option-left">
+                <div class="radio-container" onclick="selectOption(2)">
+                    <div class="radio-inner"></div>
+                </div>
+                <div>
+                    <span class="unit-text">2 Unit</span>
+                    <span class="discount-badge">20% Off</span>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="current-price">$18.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+            </div>
+        </div>
+
+        <div class="options-grid">
+            <div class="unit-number">Size</div>
+            <div>Colour</div>
+            <div></div>
+
+            <div class="unit-number">#1</div>
+            <select id="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <div class="color-select-container">
+                <select id="color1">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+            </div>
+
+            <div class="unit-number">#2</div>
+            <select id="size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <select id="color2">
+                <option value="Colour">Colour</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="option-container" id="option3">
+        <div class="option-header">
+            <div class="option-left">
+                <div class="radio-container" onclick="selectOption(3)">
+                    <div class="radio-inner"></div>
+                </div>
+                <div>
+                    <span class="unit-text">3 Unit</span>
+                    <span class="discount-badge">30% Off</span>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="current-price">$24.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="total">Total : <span id="total-price">$18.00 USD</span></div>
+    </div>
+
+    <button class="add-to-cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Add to Cart
+    </button>
+    <script src="index.js"></script>
+
+
+</body>
+</html>
